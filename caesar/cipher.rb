@@ -2,15 +2,15 @@ def cipher(word, shift)
   cryptic = ""
   alphabet = ("a".."z").to_a.concat(("A".."Z").to_a)
 
-  alphabet.each_with_index do |letter, index|
-    puts "#{index}: #{letter}"
-  end
+  # alphabet.each_with_index do |letter, index|
+  #   puts "#{index}: #{letter}"
+  # end
 
   word.each_char do |char|
     if alphabet.include?(char)
       alphabet.each_with_index do |letter, index|
         if letter === char
-          # puts index + shift
+          # Adjust for going outside alphabet list
           if index + shift > 51
             num = (index + shift) - 26
           elsif index.between?(25, 51) && (index + shift) < 26

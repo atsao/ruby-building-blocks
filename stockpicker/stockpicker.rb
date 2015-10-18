@@ -2,8 +2,10 @@
 # Had assistance from other students' solutions
 
 def stockpicker(prices)
-
+  # Initialize first profit to compare against
   current_profit = prices[1] - prices[0]
+
+  # Initialize first buy_day and sell_day pair
   buy_sell_days = [0, 1]
 
   prices.each_with_index do |buy_price, buy_day|
