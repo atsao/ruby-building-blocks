@@ -1,1 +1,2 @@
-# Ruby Projects\nThe Odin Project
+# Ruby Projects
+The Odin Project
